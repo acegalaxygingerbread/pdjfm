@@ -1,0 +1,62 @@
+<!DOCUMENT HTML>
+<html>
+<head>
+<style>
+span {color:#00cc00;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+</head>
+<body>
+
+<script>
+function radio_change(radio) {
+  document.getElementById("playerhtml5_r295352").src="players/promoradio_"+radio+".html";
+  document.getElementById("nowplaying").innerHTML="Now Playing a <span style='color:#cc0000;'>PDJ</span>.<span style='color:#f09f00;'>FM</span>:"+radio+" Radiostation";
+}
+</script>
+
+<div data-role="page" id="main_page" data-theme="a">
+    <div data-role="header" >
+        <h1 id="name"><span style='color:#cc0000;'>PDJ.</span><span style='color:#f09f00;'>FM</span> App by <span style='color:#cc0000;'>DJ Antony</span> <span style='color:#f09f00;'>Ufa</span></h1>
+        <a href="#info_page" data-icon="grid" class="ui-btn-right">Info</a>
+    </div>
+    <div data-role="content">	
+
+<div id="wrapplaer">
+<iframe id="playerhtml5_r295352" frameborder="0" style="font-family:arial;" width="100%"></iframe> 
+<div id="nowplaying">   
+</div></div>
+
+        <ul data-role="listview" data-inset="true" data-theme="a">
+            <li><a href="javascript://" onclick="radio_change('top100');">Top 100</a></li>
+            <li><a href="javascript://" onclick="radio_change('channel5');">Channel 5</a></li>
+            <li><a href="javascript://" onclick="radio_change('klubb');">Klubb</a></li>
+            <li><a href="javascript://" onclick="radio_change('dubstep');">Dubstep</a></li>
+            <li><a href="javascript://" onclick="radio_change('pop');">Pop</a></li>
+            <li><a href="javascript://" onclick="radio_change('nu');">Nu</a></li>
+            <li><a href="javascript://" onclick="radio_change('toonu');">Too Nu</a></li>
+            <li><a href="javascript://" onclick="radio_change('yo');">Yo</a></li>
+            <li><a href="javascript://" onclick="radio_change('fullmoon');">Full Moon</a></li>
+            <li><a href="javascript://" onclick="radio_change('bobina');">Bobina</a></li>
+            <li><a href="javascript://" onclick="radio_change('300kmh');">300kmh</a></li>
+            <li><a href="javascript://" onclick="radio_change('186mph');">186mph</a></li>
+            <li><a href="javascript://" onclick="radio_change('deep');">Deep</a></li>
+            <li><a href="javascript://" onclick="radio_change('toodeep');">Too Deep</a></li>
+            <li><a href="javascript://" onclick="radio_change('mini');">Mini</a></li>
+            <li><a href="javascript://" onclick="radio_change('oldschool');">Old School</a></li>
+            <li><a href="javascript://" onclick="radio_change('vata');">Vata</a></li>
+            <li><a href="javascript://" onclick="radio_change('strange');">Strange</a></li>
+            <li><a href="javascript://" onclick="radio_change('brainfck');">Brainfck</a></li>
+        </ul>
+
+</div>
+    <div data-role="footer">
+    </div>
+</div>	
+
+
+</body>
+</html>

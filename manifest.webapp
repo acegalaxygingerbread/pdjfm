@@ -1,0 +1,14 @@
+﻿{
+    "name":"PDJ.FM",
+    "launch_path": "/index.html",
+    "version": "1.2",
+    "developer": {
+        "name":"Tomilin Anton Alexandrovich",
+        "url":"http://tomilinsoftware.tk"
+    },
+  "default_locale": "en",
+    "description":"",
+    "icons":{
+        "128":"/icon-128.png"
+    }
+} 
